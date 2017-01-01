@@ -115,7 +115,7 @@ body .material-icons {
     border-radius: 0;
 }
 
-.header_menu ul {
+.header_menu .container_special > ul {
     line-height: 0;
     list-style: none;
     text-align: justify !important;
@@ -141,38 +141,15 @@ body .material-icons {
     display: inline-block;
 }
 
+
 .header_menu .container .navbar-top .nav-item {
     display: inline-block;
     float: none;
 }
 
-.header_menu .container .navbar-top .nav-item:first-child {
-    width: 90px;
-}
-
-.header_menu .container .navbar-top .nav-item:nth-child(3) {
-    width: 155px;
-}
-
-.header_menu .container .navbar-top .nav-item:nth-child(5) {
-    width: 173px;
-}
-
-.header_menu .container .navbar-top .nav-item:nth-child(7) {
-    width: 150px;
-}
-
-.header_menu .container .navbar-top .nav-item:nth-child(9) {
-    width: 95px;
-}
-
-.header_menu .container .navbar-top .nav-item:nth-child(11) {
-    width: 147px;
-}
-
 .header_menu a {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: white;
 }
 
@@ -205,41 +182,46 @@ body .material-icons {
 }
 
 .header_menu .nav-pills {
+    text-align: left;
+    text-align-last: left;
     position: absolute;
     top: 100%;
     left: 7%;
     z-index: 3;
-    display: none;
+    display: block;
+    visibility: collapse;
 }
 
 .header_menu .nav-pills .nav-item {
+    text-align: left;
+    width: 14rem;
     padding: 0;
     font-size: 0.8rem;
 }
 
 .header_menu .nav-pills:nth-of-type(1) {
-    top: 100%;
-    left: 7%;
+    top: 70%;
+    left: 5%;
 }
 
 .header_menu .nav-pills:nth-of-type(2) {
-    top: 100%;
-    left: 20%;
+    top: 70%;
+    left: 17%;
 }
 
 .header_menu .nav-pills:nth-of-type(3) {
-    top: 100%;
-    left: 35%;
+    top: 70%;
+    left: 34%;
 }
 
 .header_menu .nav-pills:nth-of-type(4) {
-    top: 100%;
-    left: 49%;
+    top: 70%;
+    left: 53%;
 }
 
 .header_menu .nav-pills:nth-of-type(5) {
-    top: 100%;
-    left: 64%;
+    top: 70%;
+    left: 66%;
 }
 
 
@@ -249,20 +231,28 @@ body .material-icons {
 }
 
 .navbar-top .dropdown_menu .nav-link {
-    border: none !important;
     background-color: #A30F36 !important;
     color: white !important;
 }
 
-.dropdown_menu:hover {
-    display: block;
+.navbar-top .dropdown_menu .nav-link:first-child {
+    padding-top: 1rem;
 }
+
+
+ul .dropdown_menu:hover {
+   visibility: visible;
+}
+
 
 
 .header_menu .nav-item:hover + .dropdown_menu {
-    display: inline;
+    visibility: visible;
 }
 
+.header_menu .nav-link:hover + .dropdown_menu {
+    visibility: visible;
+}
 
 
 
@@ -289,20 +279,22 @@ body .material-icons {
 .calculate_uscrollable:hover {
     right: -80px;
 }
+/*
 
 .carousel img {
     height: 30%;
 }
+*/
 
 .row_slider {
-    height: 80%;
+    height: 140%;
 }
 
 .row_slider h2 {
-    position: relative;
-    padding-top: 1rem;
-    padding-left: 7rem;
-    margin-bottom: -5.3rem;
+    margin: auto;
+    top: 5%;
+    left: 8%;
+    position: absolute;
     z-index: 1;
 }
 
@@ -313,17 +305,6 @@ body .material-icons {
 
 /* slider w. icons */
 
-.slider_icons {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider_icons a {
-    margin-left: 4%;
-    margin-right: 4%;
-    display: inline-block;
-}
 
 .icon_big {
     stroke: #A30F36;
@@ -331,12 +312,18 @@ body .material-icons {
     width: 4rem;
 }
 
-.slider_icons p {
-    vertical-align: bottom;
+.slider_icons {
+    padding: 0 7%;
 }
 
-.slider_icons img, .slider_icons p {
-    display: inline-block;
+.slider_icons p, .slider_icons img {
+    float: left;
+}
+
+.slider_icons p {
+    text-align: left;
+    padding-top: 5%;
+    vertical-align: bottom;
 }
 
 .slider_icons a {
@@ -382,6 +369,10 @@ p.contacts_line {
     margin-top: 3rem;
 }
 
+.row_contacts > div:nth-child(2) {
+    margin-bottom: 5rem;
+}
+
 .city_name {
     color: #A30F36;
     font-weight: 400;
@@ -408,8 +399,13 @@ p.contacts_line {
     background-size: cover;
 }
 
-.clients_list_1 {
-    background-image: url('assets/img/logos.jpg');
+.clients_list_1  div {
+    height: 150px;
+    display: inline-block;
+}
+
+.clients_list_1 div img {
+    
 }
 
 .clients_list_2 {
