@@ -1,0 +1,46 @@
+.picture_on_the_side div {
+    display: flex;
+    font-size: 1rem;
+}
+
+.picture_on_the_side img {
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+}
+
+.picture_on_the_side p {
+    text-align: left;
+    vertical-align: top;
+}
+
+.p_with_number:nth-child(2) span:before {
+    content: "2";
+}
+
+.p_with_number:nth-child(3) span:before {
+    content: "3";
+}
+.p_with_number:nth-child(4) span:before {
+    content: "4";
+}
+.p_with_number:nth-child(5) span:before {
+    content: "5";
+}
+.p_with_number:nth-child(6) span:before {
+    content: "6";
+}
+.p_with_number:nth-child(7) span:before {
+    content: "7";
+}
+
+#pencilbackground {
+    background-image: url("assets/img/why_we_bckgr.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 35rem;
+}
+
+#numbersWrapper {
+
+}

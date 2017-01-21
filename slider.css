@@ -1,0 +1,65 @@
+.slider {
+    height: 35rem;
+    position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+    padding-left: 20%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .container {
+    position: relative;
+    left: 0;
+}
+
+.slider .container h2 {
+    margin-left: -21.5%;
+}
+
+.slider {
+    margin: auto;
+    max-width: 1920px;
+}
+
+.slide1 {
+    background: url(assets/img/summer_1.jpg)no-repeat center;
+    background-size: cover;
+    animation:fade 8s infinite;
+    -webkit-animation:fade 8s infinite;
+
+}
+.slide2 {
+    background: url(assets/img/summer_2.jpg)no-repeat center;
+    background-size: cover;
+    animation:fade2 8s infinite;
+    -webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url(assets/img/summer_3.jpg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+    -webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade2
+{
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+@keyframes fade3
+{
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}

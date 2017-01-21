@@ -1,0 +1,167 @@
+.carousel.carousel-control.icon-prev {
+    left: 20% !important;
+}
+
+.carousel-control.icon-next {
+    right: 20% !important;
+}
+
+
+
+.tech_advantages_wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+/*
+    TABLE
+*/
+
+table tr:first-child th {
+    height: 70px;
+    background-image: url("assets/img/table-header-img.png");
+}
+
+table th:first-child {
+    background-image: none !important;
+}
+
+table th:nth-child(3) {
+    background-position: -230px -3px;
+}
+
+table th:nth-child(4) {
+    background-position: -450px -3px;
+}
+
+table th:nth-child(5) {
+    background-position: -650px -3px;
+}
+
+table th:nth-child(6) {
+    background-position: -850px -3px;
+}
+
+table th:nth-child(7) {
+    background-position: -1065px -3px;
+}
+
+#tblBuildingTechs {
+    width: 90%;
+    max-width: 1280px;
+    font-size: 1rem;
+}
+
+#tblBuildingTechs tr {
+    border: none;
+}
+
+#tblBuildingTechs th {
+    line-height: 0.7rem;
+    color: #A30F36;
+}
+
+#tblBuildingTechs td, #tblBuildingTechs th {
+    padding: 1rem 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.dblColumnTextWrapper span {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #A30F36;
+}
+
+.dblColumnTextWrapper p {
+    display: inline;
+}
+
+.dblColumnTextWrapper  div > p:last-child {
+    padding-top: 1.6rem;
+    padding-left: 1rem;
+}
+
+.dblColumnTextWrapper  div:last-child > div:last-child > p:last-child {
+    padding-top: 0.9rem;
+    padding-left: 1rem;
+}
+
+#examplesGalleryWrapper {
+    background-color: white;
+}
+
+.dblColumnTextWrapper div {
+    display: flex;
+}
+
+
+/*
+    samples GALLERY
+*/
+
+.slider_gallery .bigRedSlider img {
+    width: 80%;
+    height: 80%;
+}
+
+.slider_gallery .bigRedSlider p {
+    text-align: left;
+    color: #0E0E0E;
+    font-size: 0.7rem;
+    padding-left: 10%;
+    font-weight: bold;
+}
+
+
+/*
+    ABOUT SECTION
+*/
+
+.row_about {
+    margin: auto;
+    padding: 0;
+}
+
+/*
+    GALLERY SERVICES
+*/
+
+.services_gallery img {
+    width: 80%;
+    height: 80%;
+}
+
+.services_gallery p {
+    text-align: left;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+.services_gallery span {
+    color: #0E0E0E;
+    font-weight: bold;
+}
+
+/*
+    FEEDBACKS SLIDER
+*/
+
+#ourFeedbacksWrapper {
+    background-color: #A30F36;
+    color: white;
+}
+
+.manager_photo {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.text-xs-bold {
+    font-weight: bold;
+    color: #0E0E0E;
+}
+
+.no_bottom_margin {
+    margin-bottom: 0;
+}
