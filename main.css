@@ -473,10 +473,6 @@ ul .dropdown_menu:hover {
     margin: auto;
 }
 
-#numbersWrapper > div {
-    display: flex;
-}
-
 #numbersWrapper h1 {
     font-size: 2.9rem;
     font-weight: 900;
@@ -484,15 +480,10 @@ ul .dropdown_menu:hover {
 }
 
 #numbersWrapper p {
-    font-size: 0.8rem;
-    display: inline-block;
+    font-size: 1.1rem;
     padding-top: 0.5rem;
     padding-left: 0.3rem;
 
-}
-
-#numbersWrapper > div:nth-child(2) {
-    padding-left: 5%;
 }
 
 /*
