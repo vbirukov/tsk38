@@ -67,7 +67,7 @@ img {
 }
 
 #portfolioCard .icon-prev, #portfolioCard .icon-next {
-    top:65%;
+    top: 40% !important;
     color: #A30F36;
     text-shadow: none;
 }
