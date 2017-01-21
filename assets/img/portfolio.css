@@ -1,0 +1,78 @@
+.nav-pills .nav-item .open a .nav-link {
+    background-color: none;
+}
+
+.dropdown-menu  a{
+    border: none;
+    color: white;
+}
+
+.nav-tabs .nav-link,.nav-tabs.open .nav-link  {
+    border: none;
+    background-color: transparent;
+}
+
+img {
+    width: 95%;
+    height: 95%;
+}
+
+.picture_box p span {
+    font-weight: 600;
+}
+
+.picture_box p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-bottom: 0;
+}
+
+.picture_box > div >img:hover {
+    box-shadow: 3px 3px 1px 1px gainsboro;
+}
+
+.picture_box > div:hover > p {
+    text-decoration: underline;
+}
+
+#portfolioCard .modal-dialog{
+    max-width: 70%;
+}
+
+#portfolioCard .carousel {
+    margin-top: 1rem !important;
+}
+
+#portfolioCard .carousel-indicators {
+    margin-top: 0.2rem;
+    bottom: -2.7rem;
+}
+
+#portfolioCard .carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.no-gutters {
+    padding: 0;
+}
+
+#portfolioCard .icon-prev, #portfolioCard .icon-next {
+    top:65%;
+    color: #A30F36;
+    text-shadow: none;
+}
+
+#portfolioCard p {
+    font-weight: 600;
+}
+
+.btn-danger {
+    background-color: #A30F36;
+    border-color: #A30F36;
+}
+
+.btn-danger:hover {
+    background-color: #AF0F36;
+    border-color: #AF0F36;
+}
