@@ -222,7 +222,15 @@
 
 
 
-
+<div class="map_overlay">
+    <div class="row cities_map_selector">
+        <button onclick="initMap({lat: 52.2860275, lng: 104.2505736})">Иркутск</button>
+        <button>Новосибирск</button>
+        <button>Красноярск</button>
+        <button onclick="initMap({lat: 50.5894186, lng: 36.4330508})">Белгород</button>
+        <button>Москва</button>
+    </div>
+</div>
 
 <div id="map" style="height: 25rem"></div><!-- /map -->
 
@@ -467,10 +475,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 <script src="app.js" type="application/javascript"></script>
 <script>
-    function initMap() {
+
+
+    function initMap(position) {
         // Create a map object and specify the DOM element for display.
+        position = position || {lat: 52.2860275, lng: 104.2505736};
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 52.2860275, lng: 104.2505736},
+            center: position,
             scrollwheel: false,
             zoom: 14,
             styles: [{
@@ -482,11 +493,27 @@
                 {"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
         });
         var marker = new google.maps.Marker({
-            position: {lat: 52.2860275, lng: 104.2505736},
+            position: position,
             map: map,
-            title: 'Здесь наш главный офис!'
+            title: 'Здесь наш главный офис!',
+            icon: 'assets/img/logo.png'
         });
+
     }
+
+//    document.querySelector('.cities_map_selector button').onclick(
+//            function() {
+//                switch(this.innerText) {
+//                    case 'Иркутск':
+//                            position = {lat: 52.2860275, lng: 104.2505736};
+//                            break;
+//                    case 'Белгород':
+//                            position = {lat: 50.5894186, lng: 36.4330508};
+//                            break;
+//                }
+//                initMap(position);
+//            }
+//    );
 
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrJ9a1BO9Z2C9Q4VizerC0umcR9VfNlLE&callback=initMap"
