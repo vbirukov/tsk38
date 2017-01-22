@@ -224,15 +224,15 @@
 
 <div class="map_overlay">
     <div class="row cities_map_selector btn" id="cities_map_selector">
-        <button onclick="initMap({lat: 52.2860275, lng: 104.2505736})" class="current">Иркутск</button>
-        <button>Новосибирск</button>
-        <button>Красноярск</button>
-        <button onclick="initMap({lat: 50.5894186, lng: 36.4330508})">Белгород</button>
-        <button>Москва</button>
+        <button onclick="initMap({lat: 52.2860275, lng: 104.2505736}), setButton()" class="current">Иркутск</button>
+        <button onclick="initMap({lat: 50.582437, lng: 36.5643953}), setButton()">Белгород</button>
+        <button onclick="initMap({lat: 55.025403, lng: 82.9472923}), setButton()">Новосибирск</button>
+        <button onclick="initMap({lat: 53.7607232, lng: 87.1115089}), setButton()">Новокузнецк</button>
+        <button onclick="initMap({lat: 56.0369238, lng: 92.871981}), setButton()">Красноярск</button>
     </div>
 </div>
 
-<div id="map" style="height: 25rem"></div><!-- /map -->
+<div id="map" style="height: 55vh"></div><!-- /map -->
 
 
 <div class="row row_contacts_block px-3">
@@ -476,7 +476,6 @@
 <script src="app.js" type="application/javascript"></script>
 <script>
 
-
     function initMap(position) {
         // Create a map object and specify the DOM element for display.
         position = position || {lat: 52.2860275, lng: 104.2505736};
@@ -496,10 +495,20 @@
             position: position,
             map: map,
             title: 'Здесь наш главный офис!',
-            icon: 'assets/img/logo.png'
+            icon: 'assets/img/map_logo.png'
         });
 
     }
+
+
+    $('button').on('click',
+            function () {
+                this.className = 'current';        })
+
+    function setButton() {
+        $('button').removeClass('current');
+    }
+
 
 //    document.querySelector('.cities_map_selector button').onclick(
 //            function() {
