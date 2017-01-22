@@ -4,6 +4,10 @@
 */
 
 @import url(http://allfont.ru/allfont.css?fonts=pragmatica);
+@font-face {
+    font-family: 'Pragmatica';
+    src: url(assets/fonts/Pragmatica_Black.ttf) format(truetype);
+}
 
 .container {
     max-width: 1240px;
@@ -15,7 +19,7 @@ button:focus {outline:0 !important;}
 
 body {
     padding-top: 1rem;
-    font-family: 'Pragmatica', arial;
+    font-family: 'Pragmatica', sans-serif;
 }
 
 body .material-icons {
@@ -52,22 +56,30 @@ body .material-icons {
     background:transparent;
     position:relative;
     width:100%;
-    height:500px; /* your iframe height */
-    top:500px;  /* your iframe height */
-    margin-top:-500px;  /* your iframe height */
+    height:100px; /* your iframe height */
+    top:100px;  /* your iframe height */
+    margin-top:-100px;  /* your iframe height */
+    z-index: 5;
 }
 
 #cities_map_selector {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 900;
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 
-#cities_map_selector a {
+#cities_map_selector button {
     color: #A30F36;
     text-decoration: none;
+    background: none;
+    border: none;
+}
+
+#cities_map_selector .current {
+    background: white;
 }
 
 #cities_map_selector a:hover, #cities_map_selector a:visited, #cities_map_selector a:active {
