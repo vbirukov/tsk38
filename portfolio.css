@@ -44,8 +44,10 @@ img {
     text-decoration: underline;
 }
 
-#portfolioCard .modal-dialog{
-    max-width: 70%;
+
+#modalMainImg {
+    max-height: 40vh;
+    width: auto;
 }
 
 #portfolioCard .carousel {
@@ -58,8 +60,8 @@ img {
 }
 
 #portfolioCard .carousel img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .no-gutters {
@@ -68,7 +70,7 @@ img {
 
 #portfolioCard .icon-prev, #portfolioCard .icon-next {
     top: 40% !important;
-    color: #A30F36;
+    color: #dd1118;
     text-shadow: none;
 }
 

@@ -564,18 +564,19 @@
 <div class="modal fade" id="portfolioCard">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header pb-0">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <i class="fa fa-times" aria-hidden="true"></i>
                 </button>
-                <h1 class="modal-title text-xs-center pb-1 text-muted">Общежитие на 150 человек</h1>
+                <h3 class="modal-title text-xs-center pb-0 text-muted">Общежитие на 150 человек</h3>
 
                 <p class="text-main-color text-xs-center">Цена: то 1800р/м<span class="sup">2</span></p>
 
             </div>
             <div class="modal-body">
+                <div class="maximizer">
                 <div class="row text-xs-center">
-                    <img src="assets/img/card-pht-hangar-big.png">
+                    <img id="modalMainImg" src="assets/img/card-pht-hangar-big.png">
                 </div>
                 <div class="row text-main-color text-xs-center">
                     <div id="carousel-icons" class="carousel slide" data-ride="carousel">
@@ -628,11 +629,11 @@
                     </div><!-- carousel  -->
                 </div> <!--/row -->
 
-                <div class="row mt-3">
+                <div class="row mt-2">
                     <p class="text-muted text-xs-center">Здесь следует вставить описание конструкции</p>
                 </div>
 
-                <div class="row mt-1">
+                <div class="row">
                     <form class="text-xs-center">
                         <div class="form-group">
                             <input type="text" class="mx-auto form-control"
@@ -644,8 +645,9 @@
                         </div>
                     </form>
                 </div>
+                </div> <!-- maximizer -->
             </div>
-            <div class="modal-footer text-xs-center mt-1 pb-3">
+            <div class="modal-footer text-xs-center pb-1">
                 <div class="row">
                     <button type="button" class="mx-auto btn btn-primary" id="sendRequestPortfolioBtn">Хочу такой же!</button>
                 </div>
@@ -668,7 +670,7 @@
             integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
             crossorigin="anonymous">
     </script>
-<script src="app.js" type="application/javascript">
-</script>
+    <script src="app.js" type="application/javascript">
+    </script>
 </body>
 </html>
