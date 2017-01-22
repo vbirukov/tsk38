@@ -222,32 +222,10 @@
 
 
 
-<div>
-    <div class="map_overlay text-xs-center text-main-color text-xs-bold pt-2">
-        <div id="cities_map_selector">
-            <div>
-                <a href="#">Иркутск</a>
-            </div>
-            <div>
-                <a href="#">Белгород</a>
-            </div>
-            <div>
-                <a href="#">Новосибирск</a>
-            </div>
-            <div>
-                <a href="#">Новокузнецк</a>
-            </div>
-            <div>
-                <a href="#">Краснроярск</a>
-            </div>
-        </div>
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6903.160705314752!2d104.24968733656796!3d52.28631229504324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfi!4v1483904999373" id="irkustk" width="100%" height="400" frameborder="0" style="border:0" scrolling="no" allowfullscreen></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.4043712770954!2d36.56438995033814!3d50.58243697939317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41266a7d9b355cf1%3A0x67ade1b8e075749f!2z0YPQuy4g0KnQvtGA0YHQsCwgOCwgMTAsINCR0LXQu9Cz0L7RgNC-0LQsINCR0LXQu9Cz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDMwODAyNw!5e0!3m2!1sru!2s!4v1484605782547" id="belgorod" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.016511314943!2d82.94728695059968!3d55.025402980268744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5e3b82e8073%3A0xac1e675887cf09aa!2z0YPQuy4g0J_QvtC60LDRgtC90LDRjywgMTI0LCDQndC-0LLQvtGB0LjQsdC40YDRgdC6LCDQndC-0LLQvtGB0LjQsdC40YDRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDYzMDAxNw!5e0!3m2!1sru!2s!4v1484605872283" id="novosibirsk" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63474.64108204378!2d87.07689185999301!3d53.75583351231248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42d0c05757229ee5%3A0x230e697c7a7cd940!2z0J3QvtCy0L7QutGD0LfQvdC10YbQuiwg0JrQtdC80LXRgNC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1484605923097"  id="novokuznetsk" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.315737220424!2d92.86272821559523!3d56.01320438062379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7ae3ff1f1fa91%3A0x183c7115c57f0df5!2z0YPQuy4g0JvQtdC90LjQvdCwLCDQmtGA0LDRgdC90L7Rj9GA0YHQuiwg0JrRgNCw0YHQvdC-0Y_RgNGB0LrQuNC5INC60YDQsNC5LCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1484605961309"  id="krasnoyarsk" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>  <!-- /map -->
+
+
+<div id="map" style="height: 25rem"></div><!-- /map -->
+
 
 <div class="row row_contacts_block px-3">
 
@@ -488,6 +466,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 <script src="app.js" type="application/javascript"></script>
-<script src="mapsswitch.js" type="application/javascript"></script>
+<script>
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 52.2860275, lng: 104.2505736},
+            scrollwheel: false,
+            zoom: 14,
+            styles: [{
+                "featureType":"all",
+                "elementType":"labels.text.fill",
+                "stylers":[{"saturation":36},
+                    {"color":"#000000"},
+                    {"lightness":140}]},
+                {"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+        });
+        var marker = new google.maps.Marker({
+            position: {lat: 52.2860275, lng: 104.2505736},
+            map: map,
+            title: 'Здесь наш главный офис!'
+        });
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrJ9a1BO9Z2C9Q4VizerC0umcR9VfNlLE&callback=initMap"
+        async defer></script>
 </body>
 </html>
