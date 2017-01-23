@@ -21,19 +21,23 @@ img {
     height: 95%;
 }
 
+.picture_box > div {
+    padding-bottom: 2rem;
+}
+
 .picture_box p span {
     font-weight: 600;
 
 }
 
 .picture_box p {
-    font-size: 0.7rem;
-    line-height: 0.7rem;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
     margin-bottom: 0;
 }
 
 .picture_box > div > p:first-of-type {
-    margin-top: 0.7rem;
+    margin-top: 1rem;
 }
 
 .picture_box > div >img:hover {
