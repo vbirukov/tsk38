@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Производственная-база" transform="translate(-729.000000, -79.000000)">
+            <polyline id="Fill-107" fill="#8D1736" points="735.1 111.137 764.234 82.002 782.644 100.412 782.644 121.861 764.234 140.271 735.1 111.137"></polyline>
+            <polygon id="Fill-108" fill="#1A1918" points="781.241 140.484 782.644 140.484 782.644 82.04 781.241 82.04"></polygon>
+            <polygon id="Fill-109" fill="#8D1736" points="738.426 102.576 763.473 98.897 777.653 100.359 777.637 117.049 752.671 127.78 738.738 118.779"></polygon>
+            <polygon id="Stroke-110" stroke="#8D1736" stroke-width="2.835" points="738.426 102.576 763.473 98.897 777.653 100.359 777.637 117.049 752.671 127.78 738.738 118.779"></polygon>
+            <path d="M777.637,117.049 L762.846,112.282 L738.738,118.779 M738.426,102.576 L747.328,116.464 L752.181,100.555 L756.795,113.913 L763.473,98.897 L762.846,112.282 M770.385,120.166 L756.795,113.913 M760.895,124.245 L747.044,116.54" id="Stroke-111" stroke="#FFFFFF" stroke-width="1.417" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M752.181,100.555 L764.895,103.53 L752.181,100.555 Z M777.653,100.359 L752.671,106.568 L777.653,100.359 Z M738.426,102.576 L763.473,98.897 L777.654,100.359 L738.426,102.576 Z M770.385,120.166 L764.895,103.53 L760.895,124.245 L770.385,120.166 Z M752.671,106.568 L760.895,124.245 L770.385,120.166 L777.654,100.359 L777.637,117.049 L752.671,127.78 L752.671,106.568 Z M752.671,127.78 L752.671,106.568 L738.426,102.576 L738.738,118.779 L752.671,127.78 Z" id="Stroke-112" stroke="#FFFFFF" stroke-width="1.701" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

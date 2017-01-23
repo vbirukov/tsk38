@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>ambar</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(265 138)" figma:type="canvas">
+<g id="ambar" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-263.82 -137)" fill="#D0889A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Shape" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-265 -138)" fill="#A30F36" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 22L 0 5.61702L 8.36 0L 12.76 0L 22 5.61702L 22 22L 0 22Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 1.44361 7.12782L 22.5564 7.12782L 17.7744 3.42857L 12.0902 1.44361L 6.40602 3.42857L 1.44361 7.12782ZM 17.1429 15.6993L 19.579 18.406L 22.015 15.6993L 17.1429 15.6993ZM 20.3008 19.218L 22.5564 16.782L 22.5564 21.7444L 20.3008 19.218ZM 21.9248 22.5564L 19.6692 20.0301L 17.4135 22.5564L 21.9248 22.5564ZM 18.8571 19.218L 16.6015 21.6541L 16.6015 16.6917L 18.8571 19.218ZM 16.6917 14.6165L 22.5564 14.6165L 22.5564 8.66165L 16.6917 8.66165L 16.6917 14.6165ZM 1.98497 15.6993L 4.42105 18.406L 6.85715 15.6993L 1.98497 15.6993ZM 5.14287 19.218L 7.39851 16.782L 7.39851 21.7444L 5.14287 19.218ZM 6.67669 22.5564L 4.42105 20.0301L 2.16541 22.5564L 6.67669 22.5564ZM 3.69925 19.218L 1.44361 21.6541L 1.44361 16.6917L 3.69925 19.218ZM 1.44361 14.6165L 7.30828 14.6165L 7.30828 8.66165L 1.44361 8.66165L 1.44361 14.6165ZM 24 24L 0 24L 0 6.49625L 5.594 2.25564L 12 1.37673e-06L 18.406 2.25564L 24 6.49625L 24 24ZM 8.84209 8.66165L 8.84209 22.5564L 15.2481 22.5564L 15.2481 8.66165L 8.84209 8.66165Z"/>
+</defs>
+</svg>

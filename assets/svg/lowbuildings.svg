@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="52px" height="51px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle-path@2x</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="#A30F36" stroke-width="0.8" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-2.000000, -158.000000)" fill="#010202">
-            <g id="Иконки" transform="translate(2.000000, 1.000000)">
-                <g id="Group">
-                    <path d="M39.2,195.9 L12.6,195.9 L12.6,194.3 L13.8,194.3 L13.8,189.1 L12.8,189.1 C12.8,188.5 12.9,188 13.1,187.5 C13.4,186.9 13.7,186.7 14.1,186.4 L15.1,185.7 L15.1,180.4 L13.9,180.4 C13.9,179.8 14,179.2 14.3,178.6 C14.7,177.8 15.1,177.5 15.8,177.1 L26,169.3 L36.2,177.2 C36.8,177.6 37.1,177.9 37.5,178.6 C37.8,179.1 37.9,179.7 37.9,180.4 L36.7,180.4 L36.7,194.3 L39.2,194.3 L39.2,195.9 L39.2,195.9 Z M32.6,180.7 L27.6,180.7 L27.6,184.4 L32.6,184.4 L32.6,180.7 L32.6,180.7 Z M32.6,188.6 L27.6,188.6 L27.6,192.3 L32.6,192.3 L32.6,188.6 L32.6,188.6 Z M31.4,189.8 L28.9,189.8 L28.9,191.1 L31.4,191.1 L31.4,189.8 L31.4,189.8 Z M31.4,181.9 L28.9,181.9 L28.9,183.2 L31.4,183.2 L31.4,181.9 L31.4,181.9 Z M24.3,180.7 L24.3,184.4 L19.8,184.4 L22.2,186.2 L35.1,186.2 L35.1,179.5 L16.8,179.5 L16.8,184.5 L18.4,183.3 L19.3,184 L19.3,180.6 C21,180.7 22.6,180.7 24.3,180.7 L24.3,180.7 Z M23.1,181.9 L20.6,181.9 L20.6,183.2 L23.1,183.2 L23.1,181.9 L23.1,181.9 Z M22.8,194.3 L35.1,194.3 L35.1,187.4 L23.4,187.4 C23.4,187.4 23.4,187.5 23.5,187.5 C23.7,188 23.8,188.5 23.8,189.1 L22.8,189.1 L22.8,194.3 L22.8,194.3 Z M16.5,194.3 L16.5,189.8 C16.5,188.8 17.3,187.9 18.4,187.9 C19.4,187.9 20.3,188.7 20.3,189.8 L20.3,194.3 L21.3,194.3 L21.3,187.5 L18.5,185.4 L15.6,187.5 L15.6,194.3 L16.5,194.3 L16.5,194.3 Z M19,194.3 L19,189.8 C19,189.4 18.7,189.1 18.3,189.1 C17.9,189.1 17.6,189.4 17.6,189.8 L17.6,194.3 L19,194.3 L19,194.3 Z M16.9,178.3 L35,178.3 L26,171.3 L16.9,178.3 Z" id="Shape"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="27" height="27" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>lowbuildings</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(74 139)" figma:type="canvas">
+<g id="lowbuildings" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(-71 -130)" fill="#D0889A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-71 -137.5)" fill="#D0889A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Shape" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-74 -139)" fill="#A30F36" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 20 0L 20 16L 0 16L 0 0Z"/>
+<path id="path1_fill" d="M 10 0L 0.5 7.5L 0 8L 20.5 8L 10 0Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 26.6 26.6L 3.8147e-07 26.6L 3.8147e-07 25L 1.2 25L 1.2 19.8L 0.2 19.8C 0.2 19.2 0.3 18.7 0.5 18.2C 0.8 17.6 1.1 17.4 1.5 17.1L 2.5 16.4L 2.5 11.1L 1.3 11.1C 1.3 10.5 1.4 9.90001 1.7 9.30001C 2.1 8.50001 2.5 8.20001 3.2 7.80001L 13.4 3.05176e-06L 23.6 7.9C 24.2 8.3 24.5 8.60001 24.9 9.30001C 25.2 9.80001 25.3 10.4 25.3 11.1L 24.1 11.1L 24.1 25L 26.6 25L 26.6 26.6ZM 20 11.4L 15 11.4L 15 15.1L 20 15.1L 20 11.4ZM 20 19.3L 15 19.3L 15 23L 20 23L 20 19.3ZM 18.8 20.5L 16.3 20.5L 16.3 21.8L 18.8 21.8L 18.8 20.5ZM 18.8 12.6L 16.3 12.6L 16.3 13.9L 18.8 13.9L 18.8 12.6ZM 11.7 11.4L 11.7 15.1L 7.2 15.1L 9.6 16.9L 22.5 16.9L 22.5 10.2L 4.2 10.2L 4.2 15.2L 5.8 14L 6.7 14.7L 6.7 11.3C 8.4 11.4 10 11.4 11.7 11.4ZM 10.5 12.6L 8 12.6L 8 13.9L 10.5 13.9L 10.5 12.6ZM 10.2 25L 22.5 25L 22.5 18.1L 10.8 18.1C 10.8 18.1 10.8 18.2 10.9 18.2C 11.1 18.7 11.2 19.2 11.2 19.8L 10.2 19.8L 10.2 25ZM 3.9 25L 3.9 20.5C 3.9 19.5 4.7 18.6 5.8 18.6C 6.8 18.6 7.7 19.4 7.7 20.5L 7.7 25L 8.7 25L 8.7 18.2L 5.9 16.1L 3 18.2L 3 25L 3.9 25ZM 6.4 25L 6.4 20.5C 6.4 20.1 6.1 19.8 5.7 19.8C 5.3 19.8 5 20.1 5 20.5L 5 25L 6.4 25ZM 4.3 9L 22.4 9L 13.4 2L 4.3 9Z"/>
+</defs>
 </svg>
