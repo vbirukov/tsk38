@@ -46,8 +46,7 @@ img {
 
 
 #modalMainImg {
-    max-height: 40vh;
-    width: auto;
+    width: 90%;
 }
 
 #portfolioCard .carousel {
