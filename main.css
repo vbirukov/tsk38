@@ -3,19 +3,44 @@
     GENERIC ELEMENTS
 */
 
-@import url(http://allfont.ru/allfont.css?fonts=pragmatica);
+select {
+    border: 1px solid #d0d0d0;
+    height: 2rem;
+}
 
-.container {
+option {
+    border: 1px solid #d0d0d0;
+    height: 2rem;
+    padding: 1rem 0;
+}
+
+.big-picture {
+    width: 100%;
+}
+
+@import url(http://allfont.ru/allfont.css?fonts=pragmatica);
+@font-face {
+    font-family: 'Pragmatica';
+    src: url(assets/fonts/Pragmatica_Black.ttf) format(truetype);
+}
+
+.container-top {
     max-width: 1240px;
-    width: 90%;
+    width: 65%;
     margin: auto;
+}
+
+.container-80 {
+    width: 80%;
+    margin: 0 10%;
 }
 
 button:focus {outline:0 !important;}
 
 body {
+    font-size: 0.8rem;
     padding-top: 1rem;
-    font-family: 'Pragmatica', arial;
+    font-family: 'Pragmatica', sans-serif;
 }
 
 body .material-icons {
@@ -52,9 +77,9 @@ body .material-icons {
     background:transparent;
     position:relative;
     width:100%;
-    height:5rem; /* your iframe height */
-    top:5rem;  /* your iframe height */
-    margin-top:-5rem;  /* your iframe height */
+    height:100px; /* your iframe height */
+    top:100px;  /* your iframe height */
+    margin-top:-100px;  /* your iframe height */
     z-index: 5;
 }
 
@@ -76,11 +101,6 @@ body .material-icons {
 
 #cities_map_selector .current {
     background: white;
-}
-
-#cities_map_selector a {
-    color: #A30F36;
-    text-decoration: none;
 }
 
 #cities_map_selector a:hover, #cities_map_selector a:visited, #cities_map_selector a:active {
@@ -130,6 +150,29 @@ body .material-icons {
     color: white !important;
     font-size: 2rem!important;
 }
+
+.bigWhiteSlider {
+    background-color: white;
+    color: black;
+}
+
+.carousel.bigWhiteSlider.carousel-control.icon-prev {
+    left: 20% !important;
+    color: white !important;
+    font-size: 2rem!important;
+}
+
+.bigWhiteSlider.carousel-control.icon-next, .bigWhiteSlider.carousel-control.icon-prev {
+    color: white !important;
+    font-size: 2rem!important;
+}
+
+.bigWhiteSlider.carousel-control.icon-next {
+    right: 20% !important;
+    color: white !important;
+    font-size: 2rem!important;
+}
+
 
 .font_smaller {
     font-size: 0.8rem;
@@ -227,8 +270,7 @@ form .inline_group input {
 */
 
 .row_logo img {
-    height: 90%;
-    width: auto;
+    width: 100%;
 }
 
 .icon {
@@ -270,6 +312,7 @@ form .inline_group input {
 }
 
 .contacts_line span {
+
     color: #A30F36;
     font-weight: 500;
 }
@@ -277,6 +320,7 @@ form .inline_group input {
 
 
 .contacts_line p span {
+    font-size: 0.6rem;
     vertical-align: middle;
     color: black;
     font-weight: 600;
@@ -302,7 +346,7 @@ form .inline_group input {
 
 
 .col_top_menu a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -377,13 +421,13 @@ form .inline_group input {
 
 
 .header_menu .container .navbar-top .nav-item {
-    display: inline-block;
-    float: none;
-}
+                        display: inline-block;
+                        float: none;
+                    }
 
 .header_menu a {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     color: white;
 }
 
@@ -412,7 +456,7 @@ form .inline_group input {
 }
 
 .header_menu .nav-pills {
-    margin-top: -0.5rem;
+    margin-top: -0.7rem;
     margin-left: -1rem;
     text-align: left;
     text-align-last: left;
@@ -486,10 +530,6 @@ ul .dropdown_menu:hover {
     margin: auto;
 }
 
-#numbersWrapper > div {
-    display: flex;
-}
-
 #numbersWrapper h1 {
     font-size: 2.9rem;
     font-weight: 900;
@@ -497,15 +537,10 @@ ul .dropdown_menu:hover {
 }
 
 #numbersWrapper p {
-    font-size: 0.8rem;
-    display: inline-block;
+    font-size: 1.1rem;
     padding-top: 0.5rem;
     padding-left: 0.3rem;
 
-}
-
-#numbersWrapper > div:nth-child(2) {
-    padding-left: 5%;
 }
 
 /*
@@ -761,7 +796,7 @@ ul .dropdown_menu:hover {
 }
 
 .container-1280 {
-    max-width: 1280px;
+    max-width: 1240px;
 }
 
 /*
@@ -770,6 +805,11 @@ ul .dropdown_menu:hover {
 
 .row_contacts_block > .row > h1 {
     font-weight: 400;
+}
+
+.row .map {
+    width: 80%;
+    margin: auto;
 }
 
 .row .map div {
@@ -828,121 +868,23 @@ p.addres {
 }
 
 .clients_list  div {
+    width: 14%;
     margin: auto;
     filter: grayscale(95%) brightness(1.1);
     display: inline-block;
 }
 
 .clients_list img {
-    max-width: 150px;
-    max-height: 100px;
-    width: 60%;
+    /*max-width: 150px;*/
+    max-height: 120px;
+    width: 80%;
 }
 
 .clients_list div:hover {
     filter: none;
 }
 
-        /*clients 1st slide*/
 
-    /*clients 2ND slide*/
-
-.clients_list_2 div:first-child {
-    width: 213px;
-    background-position: -835px -9px;
-}
-
-.clients_list_2 div:nth-child(2) {
-    width: 213px;
-    background-position: -15px -156px;
-}
-
-.clients_list_2 div:nth-child(3) {
-    width: 118px;
-    background-position: -260px -156px;
-}
-
-.clients_list_2 div:nth-child(4) {
-    width: 93px;
-    background-position: -417px -156px;
-}
-
-.clients_list_2 div:nth-child(5) {
-    width: 144px;
-    background-position: -1054px -156px;
-}
-
-        /*clients 3rd slide*/
-
-.clients_list_3 div:first-child {
-    width: 270px;
-    background-position: -538px -156px;
-}
-
-.clients_list_3 div:nth-child(2) {
-    width: 211px;
-    background-position: -15px -320px;
-}
-
-.clients_list_3 div:nth-child(3) {
-    width: 211px;
-    background-position: -250px -320px;
-}
-
-.clients_list_3 div:nth-child(4) {
-    width: 125px;
-    background-position: -508px -320px;
-}
-
-.clients_list_3 div:nth-child(5) {
-    width: 125px;
-    background-position: -508px -320px;
-}
-
-        /*clients 4th slide*/
-
-.clients_list_4 div:first-child {
-    width: 247px;
-    background-position: -670px -320px;
-}
-
-.clients_list_4 div:nth-child(2) {
-    width: 240px;
-    background-position: -955px -320px;
-}
-
-.clients_list_4 div:nth-child(3) {
-    width: 228px;
-    background-position: -26px -490px;
-}
-
-.clients_list_4 div:nth-child(4) {
-    width: 136px;
-    background-position: -275px -490px;
-}
-
-        /*clients 5th slide*/
-
-.clients_list_5 div:first-child {
-    width: 244px;
-    background-position: -438px -480px;
-}
-
-.clients_list_5 div:nth-child(2) {
-    width: 140px;
-    background-position: -700px -480px;
-}
-
-.clients_list_5 div:nth-child(3) {
-    width: 197px;
-    height: 130px;
-    background-position: -850px -470px;
-}
-
-.clients_list_5 div:nth-child(4) {
-    width: 116px;
-    background-position: -1085px -480px;
-}
 
 /*
     ABOUT
@@ -1198,11 +1140,10 @@ this is for styling manager photo & signature near the bottom request form
     }
 }
 
-/*
-    CONTACTS PAGE
-*/
-
-iframe:nth-of-type(2), iframe:nth-of-type(3), iframe:nth-of-type(4), iframe:nth-of-type(5) {
-    display: none;
+@media screen and (min-width: 576px) and (max-width: 745px) {
+    #adaptive-margin-bottom-3 {
+        margin-bottom: 2rem !important;
+    }
 }
+
 
