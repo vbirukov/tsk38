@@ -3,6 +3,10 @@
     GENERIC ELEMENTS
 */
 
+button {
+    text-transform: uppercase !important;
+}
+
 select {
     border: 1px solid #d0d0d0;
     height: 2rem;
@@ -529,11 +533,16 @@ ul .dropdown_menu:hover {
 */
 
 #numbersWrapper {
-    width: 100%;
     line-height: 1rem;
     color: #A30F36;
     box-shadow: #878887 0 1px 3px;
     margin: auto;
+}
+
+#numbersWrapper > div {
+    max-width: 1280px;
+    margin: auto;
+    width: 80%;
 }
 
 #numbersWrapper h1 {
