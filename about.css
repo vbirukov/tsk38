@@ -40,3 +40,8 @@
     background-size: cover;
     min-height: 35rem;
 }
+
+#principalsTextsWrapper img {
+    width: 100%;
+    height: auto;
+}
