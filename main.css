@@ -699,7 +699,7 @@ ul .dropdown_menu:hover {
  .carousel-control .icon-prev {
     text-shadow: none;
     left: 25% !important;
-    top: 35%;
+    top: 15%;
     color: #8c8c8c;
     font-weight: 300;
 }
@@ -707,7 +707,7 @@ ul .dropdown_menu:hover {
 .carousel-control .icon-next {
     right: 25% !important;
     text-shadow: none;
-    top: 35%;
+    top: 15%;
     color: #8c8c8c;
     font-weight: 300;
 }
