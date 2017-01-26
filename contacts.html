@@ -651,20 +651,20 @@
     $('button').on('click',
             function () {
                 this.className = 'current';
-                switch (this.innerText) {
-                    case 'Иркутск':
+                switch (this.innerText.toLowerCase()) {
+                    case 'иркутск':
                         toggleContactsVisibility('#irkutsk-contacts');
                         break;
-                    case 'Белгород':
+                    case 'белгород':
                         toggleContactsVisibility('#belgorod-contacts');
                         break;
-                    case 'Красноярск':
+                    case 'красноярск':
                         toggleContactsVisibility('#krasnoyarsk-contacts');
                         break;
-                    case 'Новосибирск':
+                    case 'новосибирск':
                         toggleContactsVisibility('#novosibirsk-contacts');
                         break;
-                    case 'Новокузнецк':
+                    case 'новокузнецк':
                         toggleContactsVisibility('#novokuznetsk-contacts');
                         break;
                 }
