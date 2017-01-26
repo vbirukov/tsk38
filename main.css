@@ -22,10 +22,25 @@ option {
     width: 100%;
 }
 
-@import url(http://allfont.ru/allfont.css?fonts=pragmatica);
+
 @font-face {
     font-family: 'Pragmatica';
-    src: url(Pragmatica_Black.ttf);
+    src: url(fonts/PragmaticaExtendedExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'Highway';
+    src: url(fonts/PFHighwaySansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Highway light';
+    src: url(fonts/PFHighwaySansPro-light.ttf);
+}
+
+@font-face {
+    font-family: 'Pragmatica Book';
+    src: url(fonts/Pragmatica Book.ttf);
 }
 
 .container-top {
@@ -894,6 +909,11 @@ p.addres {
     width: 25px;
 }
 
+.row_clients h1 {
+    font-family: 'Highway light';
+    font-weight: 100;
+}
+
 .clients_list {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -928,8 +948,9 @@ p.addres {
     ABOUT
 */
 
-.row_about > h1 {
-    font-weight: 400;
+.row_about  h1 {
+    font-family: 'Highway light';
+    font-weight: 100;
     font-size: 3rem;
 }
 
@@ -939,13 +960,14 @@ p.addres {
 }
 
 .number {
-    font-weight: 600;
-    font-size: 4rem;
+    font-family: 'Highway' !important;
+    font-weight: 600 !important;
+    font-size: 4rem !important;
 }
 
 .number + p {
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 .row_about hr {
@@ -964,6 +986,10 @@ p.addres {
     border-radius: 0;
 }
 
+
+.advantages h1 {
+    font-family: 'Highway light';
+}
 
 .our_advantages {
     word-wrap: break-word;
