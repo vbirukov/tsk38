@@ -481,7 +481,7 @@ form .inline_group input {
     text-align: left;
     text-align-last: left;
     position: absolute;
-    z-index: 3;
+    z-index: 7;
     display: block;
     visibility: collapse;
 }
