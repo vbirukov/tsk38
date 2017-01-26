@@ -42,7 +42,7 @@ option {
 button:focus {outline:0 !important;}
 
 body {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     padding-top: 1rem;
     font-family: 'Pragmatica';
 }
@@ -280,7 +280,7 @@ form .inline_group input {
 */
 
 .row_logo img {
-    width: 100%;
+    width: 85%;
 }
 
 .icon {
@@ -330,7 +330,7 @@ form .inline_group input {
 
 
 .contacts_line p span {
-    font-size: 0.6rem;
+    font-size: 1.1rem;
     vertical-align: middle;
     color: black;
     font-weight: 600;
@@ -356,7 +356,7 @@ form .inline_group input {
 
 
 .col_top_menu a {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 500;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -439,27 +439,37 @@ form .inline_group input {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     color: white;
+    border-bottom: 4px solid rgba(163, 15, 54, 1.0);
+    box-sizing: border-box;
 }
+
+.header_menu a:hover {
+    border-bottom: 4px solid black;
+}
+
 
 .container.navbar.navbar-nav.nav-item{
     padding-top: 2.5rem;
     padding-bottom: 2rem;
+    box-sizing: border-box;
 }
 
 .bg-faded {
     background-color: rgba(163, 15, 54, 1.0);
+    border-bottom: 1px solid rgba(163, 15, 54, 1.0);
+    box-shadow: #88372b 0 4px 4px inset;
 }
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:hover {
     color: white;
 }
 
-.container_special .nav-item {
-    border-bottom: 4px solid rgba(163, 15, 54, 1.0);
-}
-.container_special .nav-item:hover {
-    border-bottom: 4px solid black;
-}
+/*.container_special .nav-item {*/
+    /*border-bottom: 4px solid rgba(163, 15, 54, 1.0);*/
+/*}*/
+/*.container_special .nav-item:hover {*/
+    /*border-bottom: 4px solid black;*/
+/*}*/
 
 .header_menu .navbar {
     padding: 0;
@@ -477,9 +487,11 @@ form .inline_group input {
 }
 
 .header_menu .nav-pills .nav-item {
+    box-sizing: border-box;
     text-align: left;
     width: 14rem;
     padding: 0;
+
 }
 
 #mobileMenu.dropdown-menu {
@@ -489,6 +501,7 @@ form .inline_group input {
 
 .dropdown-menu li a:hover {
     color: white;
+    border-bottom: 4px solid black;
 }
 
 .dropdown-menu li, .dropdown-menu a, .dropdown-menu {
@@ -567,7 +580,7 @@ ul .dropdown_menu:hover {
     position: fixed;
     color: white;
     top: 40%;
-    right: -110px;
+    right: -7.5rem;
     background-color: #A30F36;
     z-index: 3;
     -webkit-transform: rotate(-90deg); transform: rotate(-90deg);
@@ -578,8 +591,8 @@ ul .dropdown_menu:hover {
 }
 
 @keyframes example {
-    from {right: -110px;}
-    to {right: -95px;}
+    from {right: -7.5rem;}
+    to {right: -7rem;}
 }
 
 .calculate_uscrollable:hover {
@@ -587,7 +600,7 @@ ul .dropdown_menu:hover {
     animation-duration: 500ms;
     animation-name: example;
     animation-iteration-count: 1;
-    right: -95px;
+    right: -7rem;
     background-color: #A30F36;
     border-color: white;
 }
@@ -811,7 +824,14 @@ ul .dropdown_menu:hover {
 }
 
 .container-1280 {
+    width: 80%;
     max-width: 1280px;
+    margin: auto;
+}
+
+.container-1450 {
+    width: 100%;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -1163,8 +1183,12 @@ this is for styling manager photo & signature near the bottom request form
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 745px) {
+@media screen and (min-width: 376px) and (max-width: 745px) {
     #adaptive-margin-bottom-3 {
+        margin-bottom: 2rem !important;
+    }
+
+    .adaptive-margin-bottom-3 {
         margin-bottom: 2rem !important;
     }
 }

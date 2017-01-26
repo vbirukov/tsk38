@@ -1,17 +1,14 @@
-.picture_on_the_side div {
-    display: flex;
-    font-size: 1rem;
+.picture_on_the_side > div {
+    font-size: 1.2rem;
 }
 
 .picture_on_the_side img {
-    display: inline-block;
-    width: 53px;
-    height: 53px;
+    width: 35%;
+    height: auto;
 }
 
 .picture_on_the_side p {
-    text-align: left;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .p_with_number:nth-child(2) span:before {
