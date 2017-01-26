@@ -457,7 +457,7 @@ form .inline_group input {
 .bg-faded {
     background-color: rgba(163, 15, 54, 1.0);
     border-bottom: 1px solid rgba(163, 15, 54, 1.0);
-    box-shadow: #88372b 0 4px 4px inset;
+    box-shadow: #692e22 0 4px 4px inset;
 }
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:hover {
