@@ -42,3 +42,46 @@
     width: 100%;
     height: auto;
 }
+
+.company_portrait {
+    font-family: 'Highway light';
+}
+
+.company_portrait h2 {
+    color: #A30F36;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.company_portrait .fa {
+    display: inline-block;
+    font-size: 5rem;
+    color: #A30F36;
+    margin-left: -5rem;
+    padding-right: 2rem;
+}
+
+#map_background p{
+    font-weight: 600;
+    font-size: 1.2rem
+}
+
+#map_background {
+    padding-left: 12rem;
+    min-height: 25rem;
+    background-image: url("assets/img/map.jpg");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#construction-technologies {
+    font-family: 'Highway light';
+}
+
+#whyWe {
+    background-image: url("assets/img/why_we_bckgr.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left;
+}

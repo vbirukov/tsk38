@@ -6,6 +6,10 @@
     color: #A30F36;
 }
 
+#portfolioHeader .dropdown-menu, #portfolioHeader a{
+    background-color: white;
+}
+
 .dropdown-menu  a{
     border: none;
     color: white;
@@ -51,6 +55,11 @@ img {
 
 #modalMainImg {
     width: 90%;
+}
+
+#portfolioCard h1 {
+    font-family: 'Highway light';
+    color: #8c8b8b;
 }
 
 #portfolioCard .carousel {

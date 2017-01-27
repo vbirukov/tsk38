@@ -46,7 +46,8 @@ if($('#portfolioCollapseBtn')) {
 $('#cities_select_menu li').on('click', function () {
   console.log('DBG    inner text: ' + $('#currentCity').text().substr(7));
   let bufferValue =  $('#currentCity').text().substr(7);
+  console.log('DBG this.innerText: ' + this.innerText);
   $('#currentCity').html('<i class="material-icons">near_me</i>' + this.innerText);
   this.innerHTML = '<a class="nav-link" href="#">' + bufferValue +'</a>';
-})
+});
 

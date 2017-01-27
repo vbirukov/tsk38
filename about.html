@@ -301,9 +301,17 @@
 
 <hr>
 
-<div class="row">
-    <div class="company_portrait col-xs-12 text-xs-center">
-        <img class=" mx-auto" src="assets/img/1.png">
+<div class="row company_portrait">
+    <h1 class="text-xs-center">Портрет компании</h1>
+    <div class="col-xs-12 col-md-6 pt-1" id="map_background">
+        <span><i class="fa fa-map-marker" aria-hidden="true"></i><h2>География</h2></span>
+        <p>6 филиалов в городах:</p>
+        <p>Иркутск, Новосибирск,</p>
+        <p>Красноярск, Новокузнецк,</p>
+        <p>Магадан, Белгород</p>
+    </div>
+    <div class="company_portrait col-xs-12 col-md-6 text-xs-center">
+        <img class=" mx-auto" src="assets/img/cadrovy.png">
     </div>
 </div>
 
@@ -365,8 +373,8 @@
     </div>
 </div>
 
-<div class="hidden-sm-down row mt-3 container-1280">
-    <h1 class="text-xs-center font-weight-normal">Технологии строительства</h1>
+<div class="hidden-sm-down row mt-3 container-1280" id="construction-technologies">
+    <h3 class="text-xs-center font-weight-normal">Технологии строительства</h3>
     <div class="row mt-3 px-3 text-xs-bold text-xs-center">
         <div class="row mb-1 mx-2">
             <div class="col-md-3">
@@ -530,31 +538,28 @@
 </div>
 
 <div class="row">
-    <div class="col-xs-6 offset-xs-3">
-        <div class="form-body">
-            <h2 class="text-xs-center mb-2">Бесплатная консультация!</h2>
+    <div class="row px-3">
+        <div class="col-xs-12 text-xs-center px-3">
+
             <form class="text-xs-center">
                 <div class="form-group inline_group">
-                    <input type="text" class="mx-auto form-control" id="name" placeholder="Представьтесь пожалуйста">
-                    <input type="text" class="mx-auto form-control" id="phone" placeholder="Ваш телефон">
+                    <input type="text" class="mx-auto form-control" placeholder="Ваш телефон">
+                    <input type="text" class="mx-auto form-control" placeholder="Ваша почта">
+                    <button type="button" class="mx-auto btn btn-primary main-color"
+                            data-toggle="modal" data-target="#thankYouWindow">Отправить заявку</button>
                 </div>
             </form>
 
-        </div>
-        <div class="row">
-            <div class="modal-footer text-xs-center pb-3">
-                <button type="button" class="mx-auto btn btn-primary main-color" id="sendRequestBtn">Отправить заявку</button>
-            </div>
         </div>
     </div>
 </div>
 
 
-<div class="row mt-2 container-1280">
+<div class="row mt-2 container-1280" id="whyWe">
     <div class="row text-xs-center">
         <h3>Почему выбирают нас?</h3>
     </div>
-    <div class="col-xs-5 offset-xs-7 mt-2" id="whyWe">
+    <div class="col-xs-5 offset-xs-7 mt-2">
         <p class="text-xs-bold p_with_number">
             <span class="text-uppercase">Большой опыт</span><br>
             10 лет на рынке, более 3500 клиентов, возведено свыше 350 обьектов,
@@ -886,7 +891,7 @@
 <div class="row container-1280 text-muted mt-3" id="consultRequestWrapper">
     <div class="col-xs-4 text-xs-center manager mt-3">
         <img src="assets\img\manager_photo.png" alt="фото девушки менеджера" class="manager_photo">
-        <p class="text-muted">Я с удовольствие отвечу на все ваши вопросы!</p>
+        <p class="text-muted">Я с удовольствием отвечу на все ваши вопросы!</p>
 
         <p class="no_bottom_margin"><span class="text-xs-bold">Людмила Букина</span></p>
         <p class="text-muted line_tight">менеджер</p>
@@ -924,7 +929,7 @@
 
         <div class="row">
             <div class="text-xs-center pb-3">
-                <button type="button" class="mx-auto btn btn-primary"
+                <button type="button" class="mx-auto btn btn-danger"
                         data-toggle="modal" data-target="#thankYouWindow">
                     Отправить заявку
                 </button>
@@ -1003,7 +1008,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
                 </button>
                 <h4 class="modal-title text-xs-center">Заявка на расчет проекта</h4>
             </div>
@@ -1045,7 +1050,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
                 </button>
                 <h1 class="modal-title text-xs-center pb-1">Ваша заявка принята!</h1>
 

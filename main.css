@@ -18,14 +18,18 @@ option {
     padding: 1rem 0;
 }
 
+.dblColumnTextWrapper span {
+    font-family: Highway;
+}
+
 .big-picture {
     width: 100%;
 }
 
 
 @font-face {
-    font-family: 'Pragmatica';
-    src: url(fonts/PragmaticaExtendedExtraLight.ttf);
+    font-family: 'Pragmatica Light';
+    src: url(fonts/Pragmatica Light.ttf);
 }
 
 @font-face {
@@ -38,10 +42,6 @@ option {
     src: url(fonts/PFHighwaySansPro-light.ttf);
 }
 
-@font-face {
-    font-family: 'Pragmatica Book';
-    src: url(fonts/Pragmatica Book.ttf);
-}
 
 .container-top {
     max-width: 1240px;
@@ -59,7 +59,8 @@ button:focus {outline:0 !important;}
 body {
     font-size: 1.1rem;
     padding-top: 1rem;
-    font-family: 'Pragmatica';
+    font-family: 'Pragmatica Light';
+    font-weight: 100;
 }
 
 body .material-icons {
@@ -152,50 +153,6 @@ body .material-icons {
 
 #krasnoyarsk {
     display: none;
-}
-
-#ourFeedbacksWrapper, #feedbacksSlider, #documentsSlider, .bigRedSlider {
-    background-color: #A30F36;
-    color: white;
-}
-
-.carousel.bigRedSlider.carousel-control.icon-prev {
-    left: 20% !important;
-    color: white !important;
-    font-size: 2rem!important;
-}
-
-.bigRedSlider.carousel-control.icon-next, .bigRedSlider.carousel-control.icon-prev {
-    color: white !important;
-    font-size: 2rem!important;
-}
-
-.bigRedSlider.carousel-control.icon-next {
-    right: 20% !important;
-    color: white !important;
-    font-size: 2rem!important;
-}
-
-.bigWhiteSlider {
-    background-color: white;
-    color: black;
-}
-
-.carousel.bigWhiteSlider.carousel-control.icon-prev {
-    left: 20% !important;
-    color: white !important;
-    font-size: 2rem!important;
-}
-
-.bigWhiteSlider.carousel-control.icon-next, .bigWhiteSlider.carousel-control.icon-prev {
-    color: white !important;
-    font-size: 2rem!important;
-}
-
-.bigWhiteSlider.carousel-control.icon-next {
-    right: 20% !important;
-    color: white !important;
-    font-size: 2rem!important;
 }
 
 
@@ -885,6 +842,10 @@ p.addres {
     margin-top: 3rem;
 }
 
+.row_contacts_block h1 {
+    font-family: 'Highway light';
+}
+
 .city_name {
     color: #A30F36;
     font-weight: 400;
@@ -942,6 +903,9 @@ p.addres {
     filter: none;
 }
 
+.row_clients .carousel-control {
+    top: 20%;
+}
 
 
 /*
@@ -977,9 +941,12 @@ p.addres {
 }
 
 .row_about .btn-danger, .btn-danger {
+    border: 2px solid white;
     background-color: rgba(163, 15, 54, 1.0);
     border-color: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+
 }
 
 .btn {
@@ -1064,6 +1031,65 @@ footer p {
 .socials a{
     margin-right: 1rem;
 }
+
+/* BIG SLIDER */
+
+
+#ourFeedbacksWrapper, #feedbacksSlider, #documentsSlider, .bigRedSlider {
+    background-color: #A30F36;
+    color: white;
+}
+
+.carousel.bigRedSlider.carousel-control {
+    left: 20% !important;
+    top: 50%;
+}
+
+.bigRedSlider h2 {
+    font-family: 'Highway light';
+}
+
+.bigRedSlider .fa-angle-left, .bigRedSlider .fa-angle-right{
+    font-size: 5rem;
+    color: white !important;
+
+}
+
+.bigRedSlider .carousel-control {
+    opacity: 1;
+}
+
+.bigRedSlider .carousel-control .icon-prev {
+    top: 40%;
+}
+
+.bigRedSlider .carousel-control .icon-next {
+    top: 40%;
+    right: 20% !important;
+}
+
+.bigWhiteSlider {
+    background-color: white;
+    color: black;
+}
+
+.carousel.bigWhiteSlider.carousel-control.icon-prev {
+    left: 20% !important;
+    color: white !important;
+    font-size: 2rem!important;
+}
+
+.bigWhiteSlider.carousel-control.icon-next, .bigWhiteSlider.carousel-control.icon-prev {
+    color: white !important;
+    font-size: 2rem!important;
+}
+
+.bigWhiteSlider.carousel-control.icon-next {
+    right: 20% !important;
+    color: white !important;
+    font-size: 2rem!important;
+}
+
 
 
 /*
