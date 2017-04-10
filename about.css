@@ -5,6 +5,7 @@
 .picture_on_the_side img {
     width: 35%;
     height: auto;
+    max-width: 60px;
 }
 
 .picture_on_the_side p {
@@ -47,41 +48,42 @@
     font-family: 'Highway light';
 }
 
-.company_portrait h2 {
-    color: #A30F36;
-    font-weight: 600;
-    display: inline-block;
-}
-
-.company_portrait .fa {
-    display: inline-block;
-    font-size: 5rem;
-    color: #A30F36;
-    margin-left: -5rem;
-    padding-right: 2rem;
-}
-
-#map_background p{
-    font-weight: 600;
-    font-size: 1.2rem
-}
-
-#map_background {
-    padding-left: 12rem;
-    min-height: 25rem;
-    background-image: url("assets/img/map.jpg");
-    background-size: 65%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
 #construction-technologies {
-    font-family: 'Highway light';
+    font-family: 'Highway light', sans-serif;
 }
 
 #whyWe {
-    background-image: url("assets/img/why_we_bckgr.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: left;
+    /*background-image: url("assets/img/why_we_bckgr.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 65%;*/
+    /*background-position: bottom left;*/
+    min-height: 35rem;
+    font-size: 0.8rem;
 }
+
+.company_portrait {
+    height: 30rem;
+}
+
+#map_background {
+    background-image: url("assets/img/map.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+#map_background img {
+    height: 14%;
+    width: 50%;
+    margin-top: 0.8%;
+}
+
+#hr {
+    background-image: url("assets/img/hr.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+

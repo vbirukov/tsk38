@@ -2,20 +2,12 @@
     GENERAL PROPERTIES
     GENERIC ELEMENTS
 */
-
 @media screen and (min-width: 1280px) {
     .container {
         width: 1280px;
     }
 }
 
-.h1-3rem {
-    font-size: 2.9rem
-}
-
-#bp_container img {
-    width: auto;
-}
 
 input {
     font-family: Circe, sans-serif;
@@ -162,7 +154,6 @@ body {
     padding-top: 1rem;
     font-family: 'Pragmatica', sans-serif;
     font-weight: 100;
-    overflow-x: hidden;
 }
 
 body h1, body h2, body h3 {
@@ -245,7 +236,6 @@ iframe {
 }
 
 #cities_map_selector {
-    min-width: 575px;
     font-size: 1rem;
     font-weight: 900;
     display: flex;
@@ -279,14 +269,6 @@ iframe {
 #cities_map_selector a:hover, #cities_map_selector a:visited, #cities_map_selector a:active {
     color: #A30F36;
     text-decoration: none;
-}
-
-#text-input {
-    outline: #A30F36;
-}
-
-.form-control:focus {
-    border-color: #A30F36;
 }
 
 .text-xs-sup {
@@ -458,11 +440,6 @@ form .inline_group input {
 
 }
 
-#currentCity span{
-    text-transform: capitalize;
-}
-
-
 
 #cities_select_menu {
     font-size: 1rem;
@@ -485,8 +462,6 @@ form .inline_group input {
 
 }
 
-
-
 .contacts_line p span {
     font-size: 1.1rem;
     vertical-align: middle;
@@ -494,7 +469,6 @@ form .inline_group input {
     font-weight: 400;
     font-family: Pragmatica, sans-serif;
 }
-
 
 .contacts_line p:last-child {
     color: black;
@@ -562,11 +536,6 @@ form .inline_group input {
 
 .header_menu ul a {
     font-weight: 600;
-}
-
-.container-full {
-    width: 100% !important;
-    padding: 0 !important;
 }
 
 .header_menu > ul {  
@@ -863,20 +832,6 @@ ul .dropdown_menu:hover {
     border-color: white !important;
 }
 
-@media screen and (max-width: 1200px) {
-    .calculate_uscrollable {
-    padding: 0.6rem 1.5rem 1.3rem;
-    font-size: 1.5rem;
-    font-family: 'Pragmatica', sans-serif;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .calculate_uscrollable {
-        display: none;
-    }
-}
-
 
 
 /*
@@ -1121,6 +1076,14 @@ ul .dropdown_menu:hover {
     color: white;
 }
 
+.play-button {
+    position: absolute;
+    /*margin-top: 5%;*/
+    width: 90px;
+    height: 90px;
+    left: 48%;
+    top: 30%;
+}
 
 
 #videoWrapper {
@@ -1150,12 +1113,10 @@ ul .dropdown_menu:hover {
 .services_gallery img {
     width: 90%;
     height: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .services_gallery p {
-    text-align: center;
+    /*text-align: left;*/
     font-size: 1rem;
     margin-bottom: 0;
 }
@@ -1166,9 +1127,9 @@ ul .dropdown_menu:hover {
 
 .services_gallery span {
     color: #0E0E0E;
-    /*font-weight: bold;*/
+    font-weight: bold;
     padding-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .vacancyBox i {
@@ -1328,36 +1289,10 @@ p.addres {
     display: inline-block;
 }
 
-/*#carousel-clients-xs {
-    height: 250px;
-}*/
-
-#carousel-clients-xs .clients_list div {
-    padding-right: 1.5rem;
-    margin-top: 1rem;
-    width: 70%;
-    height: 80%;
-}
-
-#carousel-clients-xs .left {
-    left: 3.5rem;
-    top: 10%;
-}
-
-#carousel-clients-xs .right {
-    right: 2.7rem;
-    top: 10%;
-}
-
-
-#carousel-clients-xs .clients_list {
-    min-height: 170px;
-}
-
 .clients_list img {
+    /*max-width: 150px;*/
+    max-height: 120px;
     width: 80%;
-    height: 130px;
-    object-fit: contain;
 }
 
 .clients_list div:hover {
@@ -1440,16 +1375,16 @@ p.addres {
 /*}*/
 
 .mainScreenButton {
-
     float: right;
     margin-right: 7%;
-    /*margin-top: 15%;*/
+    margin-top: 43vh;
+    background: radial-gradient( black 2%, transparent 80%) !important;
     border: none;
     font-size: 1.5rem;
     text-shadow: 1px 1px 2px black;
     padding-bottom: 1px;
+    margin-bottom: -3rem;
     color: white;
-    background: transparent;
 }
 
 .mainScreenButton:hover {
@@ -1457,25 +1392,11 @@ p.addres {
     border: none;
 }
 
-
-.top-picture {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0.1%, transparent 30%), url("assets/img/vahtovye_main_pic.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 27.2vw;
-}   
-
-@media screen and (min-width: 1920px) {
-    .top-picture {
-        height: 529px;
-    }
+@media screen and (min-width: 1600px) {
     .mainScreenButton {
-        margin-right: 15vw; 
+        margin-top: 37vh;
     }
 }
-
-/*
 
 
 @media screen and (max-width: 770px) {
@@ -1483,27 +1404,25 @@ p.addres {
         right: -60%;
         margin-top: 35vh;
     }
-    .top-picture {
-        height: 50vh;
+}
+
+@media screen and (max-width: 1367px) {
+    .mainScreenButton {
+        margin-top: 35px;
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1400px) {
     .mainScreenButton {
-        position: static;
-        margin: auto; 
+        margin-top: 37vh;
+    }
+}
+
+@media screen and (max-width:  800px) {
+    .mainScreenButton {
         margin-top: 20vh;
     }
-    .top-picture {
-        height: 50vh;
-    }
 }
-
-@media screen and (min-width: 771px) and (max-width: 1367px) {
-    .mainScreenButton {
-        margin-top: 33vh;
-    }
-}*/
 
 .advantages h1 {
     font-family: 'Highway', sans-serif;
@@ -1670,6 +1589,8 @@ footer p {
     font-size: 2rem!important;
 }
 
+
+
 /*
     MODAL WINDOW
 */
@@ -1695,14 +1616,9 @@ footer p {
     border-color: #A30F36 !important;
 }
 
-
-
 .custom-file-control::after {
     Content: "Тех. задание" !important;
     padding-left: 1.4rem;
-    font-family: Circe, sans-serif;
-    font-size: 1rem;
-    color: #929aa0;
 }
 
 .custom-file-control::before {
@@ -1754,20 +1670,16 @@ footer p {
 .my-modal-content img {
     width: 90%;
     margin: 7%;
-    margin-top: 3%;
+    margin-top: -7%;
     height: auto;
 }
 
 /* The Close Button */
-.close .fa{
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
-    font-weight: 100;
-}
-
-.close .material-icons {
-    font-size: 32px;
+    font-weight: bold;
 }
 
 .close:hover,
@@ -1799,8 +1711,8 @@ footer p {
 
 #thankYouWindow .modal-body p {
     font-family: "Pragmatica Condensed Black", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 900;
 }
 
 #thankYouWindow .modal-header p {
@@ -1874,11 +1786,9 @@ this is for styling manager photo & signature near the bottom request form
     background-color: transparent;
 }
 
-
-
-.gallery img {
-    width: 97.5%;
-    height: 97.5%;
+img {
+    width: 95%;
+    height: 95%;
 }
 
 
@@ -1945,12 +1855,8 @@ this is for styling manager photo & signature near the bottom request form
     text-shadow: none;
 }
 
-#portfolioCard .left {
-    left: -1.7%;
-}
-
-#portfolioCard .right {
-    right: -2%;
+#portfolioCard p {
+    font-weight: 600;
 }
 
 #portfolioHeader {
@@ -2058,47 +1964,21 @@ this is for styling manager photo & signature near the bottom request form
 }
 
 #videoOverlay {
-    position: absolute;
+    position: relative;
     width: 100vw;
-    height: 38vw;
+    height: 100vh;
     z-index: 100;
-    margin-top: -38vw;
-}
-
-
-.play-button {
-    /*position: absolute;*/
-    margin-top: 15%;
-    margin-left: 45%; 
-    width: 5%;
-    height: 12%;
-    left: 80%;
-    top: 30%;
+    margin-bottom: -140vh;
 }
 
 #backgroundVideoWrapper {
-    position: relative;
-/*    margin-top: 19.5%;*/
+    margin-top: 20.5rem;
     /*margin-bottom: 11rem;*/
     width: 100vw;
     height: 38vw;
     filter: brightness(30%);
-    /*pointer-events: none;*/
+    pointer-events: none;
 }
-
-#last-gallery-samples-1 {
-    height: 15rem;
-}
-
-#last-gallery-samples-1 .slider_gallery > div {
-    height: 100%;
-}
-
-#last-gallery-samples-1 img {
-    object-fit: cover;
-    height: 10rem;
-}
-
 
 /*
     MANUAL RESPONSIVE
@@ -2113,6 +1993,11 @@ this is for styling manager photo & signature near the bottom request form
 
 }
 
+@media screen and (max-width: 1024px) {
+    .calculate_uscrollable {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 350px) and (max-width: 755px) {
     #adaptive-margin-bottom-3 {
@@ -2146,353 +2031,3 @@ this is for styling manager photo & signature near the bottom request form
         line-height: 1.1rem;
     }
 }
-
-
-/* copied from vahtovye.css*/
-
-.carousel.carousel-control.icon-prev {
-    left: 20% !important;
-}
-
-.carousel-control.icon-next {
-    right: 20% !important;
-}
-
-.tech_advantages_wrapper {
-    max-width: 1280px;
-    width: 80%;
-    margin: auto;
-}
-
-.map_overlay .container-1280 {
-    display: flex;
-}
-
-#iso-logo {
-    position: absolute;
-    top: 40%;
-    right: 30%;
-    width: 7rem;
-}
-
-/*
-    TABLE
-*/
-
-table tr:first-child th {
-    height: 70px;
-    background-image: url("assets/img/table-header-img.png");
-}
-
-table th:first-child {
-    background-image: none !important;
-}
-
-table th:nth-child(3) {
-    background-position: -230px -3px;
-}
-
-table th:nth-child(4) {
-    background-position: -450px -3px;
-}
-
-table th:nth-child(5) {
-    background-position: -650px -3px;
-}
-
-table th:nth-child(6) {
-    background-position: -850px -3px;
-}
-
-table th:nth-child(7) {
-    background-position: -1065px -3px;
-}
-
-#tblBuildingTechs {
-    width: 90%;
-    max-width: 1280px;
-    font-size: 1.2rem;
-}
-
-#tblBuildingTechs tr {
-    border: none;
-}
-
-#tblBuildingTechs th, #tblBuildingTechs td {
-    line-height: 1.4rem;
-    color: #A30F36;
-}
-
-#tblBuildingTechs td, #tblBuildingTechs th {
-    padding: 1rem 1rem;
-    border-bottom: 1px solid gray;
-}
-
-.dblColumnTextWrapper span {
-    font-size: 3rem;
-    font-weight: 600;
-    color: #A30F36;
-}
-
-.dblColumnTextWrapper p {
-    vertical-align: top;
-}
-
-.dblColumnTextWrapper div:first-child > p {
-    padding-right: 0;
-}
-
-.dblColumnTextWrapper  div:last-child > p {
-    vertical-align: baseline;
-    margin-top: 1.5rem;
-    padding-left: 0;
-}
-
-.dblColumnTextWrapper .dbl-line .text-muted {
-    margin-top: 0.7rem;
-}
-
-/*.dblColumnTextWrapper  div:last-child > div:last-child > p:last-child {*/
-    /*padding-top: 0.9rem;*/
-    /*padding-left: 1rem;*/
-/*}*/
-
-#examplesGalleryWrapper {
-    background-color: white;
-}
-
-
-
-
-/*
-    samples GALLERY
-*/
-
-.slider_gallery .bigRedSlider img {
-    width: 80%;
-    height: 80%;
-}
-
-.slider_gallery .bigRedSlider p {
-    text-align: left;
-    color: #0E0E0E;
-    font-size: 0.7rem;
-    padding-left: 10%;
-    font-weight: bold;
-}
-
-
-/*
-    ABOUT SECTION
-*/
-
-.row_about {
-    margin: auto;
-    padding: 0;
-}
-
-
-
-/*
-    FEEDBACKS SLIDER
-*/
-
-#ourFeedbacksWrapper {
-    background-color: #A30F36;
-    color: white;
-}
-
-.manager_photo {
-    width: 90%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.text-xs-bold {
-    font-weight: bold;
-    color: #0E0E0E;
-}
-
-.no_bottom_margin {
-    margin-bottom: 0;
-}
-
-
-/*END copy from vahtovye.css*/
-
-
-/* copied from about.css*/
-
-.picture_on_the_side > div {
-    font-size: 1.2rem;
-}
-
-.picture_on_the_side img {
-    width: 35%;
-    height: auto;
-    max-width: 60px;
-}
-
-.picture_on_the_side p {
-    vertical-align: middle;
-}
-
-.p_with_number:nth-child(2) span:before {
-    content: "2";
-}
-
-.p_with_number:nth-child(3) span:before {
-    content: "3";
-}
-.p_with_number:nth-child(4) span:before {
-    content: "4";
-}
-.p_with_number:nth-child(5) span:before {
-    content: "5";
-}
-.p_with_number:nth-child(6) span:before {
-    content: "6";
-}
-.p_with_number:nth-child(7) span:before {
-    content: "7";
-}
-
-#pencilbackground {
-    background-image: url("assets/img/why_we_bckgr.png");
-    background-position: center;
-    background-size: cover;
-    min-height: 35rem;
-}
-
-#principalsTextsWrapper img {
-    width: 100%;
-    height: auto;
-}
-
-.company_portrait {
-    font-family: 'Highway light';
-}
-
-/*#construction-technologies {*/
-    /*font-family: 'Highway light', sans-serif;*/
-/*}*/
-
-#whyWe {
-    /*background-image: url("assets/img/why_we_bckgr.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 65%;*/
-    /*background-position: bottom left;*/
-    min-height: 35rem;
-    font-size: 0.8rem;
-}
-
-.company_portrait {
-    height: 30rem;
-}
-
-#map_background {
-    background-image: url("assets/img/map.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-}
-
-#map_background img {
-    height: 14.5%;
-    width: 50%;
-    margin-top: 0.8%;
-}
-
-#hr {
-    background-image: url("assets/img/hr.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-}
-
-
-
-/* END copy about.css */
-
-
-/* copy from slider.css */
-
-.slider {
-    height: 70vh;
-    position: relative;
-}
-.slide1,.slide2,.slide3,.slide4,.slide5 {
-    padding-left: 20%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-}
-
-.slider .container {
-    position: absolute;
-    width: 100%;
-    z-index: 5;
-}
-
-.slider .container h2 {
-    font-family: 'Highway light', sans-serif
-}
-
-.slider {
-    margin: auto;
-    max-width: 1920px;
-}
-
-.slide1 {
-    background: url(assets/img/summer_1.jpg)no-repeat center;
-    background-size: cover;
-    animation:fade 8s infinite;
-    -webkit-animation:fade 8s infinite;
-
-}
-.slide2 {
-    background: url(assets/img/summer_2.jpg)no-repeat center;
-    background-size: cover;
-    animation:fade2 8s infinite;
-    -webkit-animation:fade2 8s infinite;
-}
-.slide3 {
-    background: url(assets/img/summer_3.jpg)no-repeat center;
-    background-size: cover;
-    animation:fade3 8s infinite;
-    -webkit-animation:fade3 8s infinite;
-}
-@keyframes fade
-{
-    0%   {opacity:1}
-    33.333% { opacity: 0}
-    66.666% { opacity: 0}
-    100% { opacity: 1}
-}
-@keyframes fade2
-{
-    0%   {opacity:0}
-    33.333% { opacity: 1}
-    66.666% { opacity: 0 }
-    100% { opacity: 0}
-}
-@keyframes fade3 {
-    0% {
-        opacity: 0
-    }
-    33.333% {
-        opacity: 0
-    }
-    66.666% {
-        opacity: 1
-    }
-    100% {
-        opacity: 0
-    }
-}
-
-
-/* END copy from slider.css */
