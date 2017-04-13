@@ -492,11 +492,11 @@ form .inline_group input {
 
 .col_top_contacts ul {
     background-color: #A30F36;
-    padding: 0.6rem;
+    padding: 0.6rem 0;
     z-index: 100;
     display: none;
     position: absolute;
-    top: 32%;
+    margin-top: -0.25rem;
     right: 0;
     margin-left: 180px;
 }
@@ -556,6 +556,7 @@ form .inline_group input {
 
 .col_top_contacts .nav-link:hover {
     background-color: #f5f5f0;
+    color: #A30F36;
 }
 
 
@@ -1727,6 +1728,12 @@ p.addres {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .top-picture { 
+        height: 33vh;
+        background-size: cover;
+    }
+}
 
 .advantages h1 {
     font-family: 'Highway', sans-serif;
@@ -2698,7 +2705,7 @@ table th:nth-child(7) {
     .mainScreenButton {
         position: relative;
         font-size: 1rem;
-        margin-top: calc(27.5vw - 7rem);
+        margin-top: calc(33vh - 7rem);
         margin-left: 65%;
     }
 }
@@ -2709,6 +2716,8 @@ table th:nth-child(7) {
     }
     .mainScreenButton {
         font-size: 1.5rem;
+        margin-left: 100%;
+        padding-right: 0;
         margin-top: calc(27.5vw - 7rem);
     }
 }
