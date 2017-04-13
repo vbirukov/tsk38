@@ -7,58 +7,59 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://use.fontawesome.com/acda2320f1.js"></script>
-    <link href="http://allfont.ru/allfont.css?fonts=pragmatica" rel="stylesheet" type="text/css">
-    <link href="slider.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
 
 <div class="container">
-    <div class="row row_logo">
-        <div class="col-lg-3 col-xs-6 col_logo"><a href="index.html"><img src="assets/img/logo.png" alt="company logo"></a></div>
-        <div class="col-lg-6 hidden-md-down col_top_menu pt-2">
-            <nav class="nav text-muted text-xs-center">
-                <a class="nav-link text-muted" href="portfolio.html">Портфолио</a>
-                <a class="nav-link text-muted" href="#">Решения</a>
-                <a class="nav-link text-muted" href="about.html">О компании</a>
-                <a class="nav-link text-muted" href="#">Блог</a>
-                <a class="nav-link text-muted" href="contacts.html">Контакты</a>
-            </nav>
-        </div>
-        <div class="col-xs-6 col-lg-3 col_top_contacts contacts_line pt-0 text-xs-right">
-            <a href="#" class="text-xs-right"><span id="currentCity"><i class="material-icons">near_me</i>Иркутск                
+        <div class="flex flex-between">
+            <div class="flex-20 flex-md-50">
+                <a href="index.html"><img src="assets/img/logo.png" class='w-100 logo' alt="company logo"></a>
+            </div>
+            <div class="flex-60 flex-md-100 flex-order-md-2 hidden-xs-down col_top_menu pt-2">
+                <nav class="nav text-muted text-xs-center">
+                    <a class="nav-link text-muted" href="portfolio.html">Портфолио</a>
+                    <a class="nav-link text-muted" href="#">Решения</a>
+                    <a class="nav-link text-muted" href="about.html">О компании</a>
+                    <a class="nav-link text-muted" href="#">Блог</a>
+                    <a class="nav-link text-muted" href="contacts.html">Контакты</a>
+                    <a class="nav-link text-muted" href="contacts.html">Вакансии</a>
+                </nav>
+            </div>
+            <div class="flex-17  flex-md-50 col_top_contacts contacts_line pt-0 text-xs-right">
+                <a href="#" class="text-xs-right"><span id="currentCity"><i class="material-icons">near_me</i>Иркутск                
             <ul class="nav nav-pills nav-stacked dropdown_menu cities_select_menu text-xs-left"
                     id="cities_select_menu">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Белгород</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новосибирск</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новокузнецк</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Красноярск</a>
-                    </li>
-                </ul></span>
-            </a>
-
-            <p class="text-xs-right font-weight-bold"><i class="material-icons">phone</i><span class="text_bold">+7 (3952) 28-31-09</span></p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Новосибирск</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Новокузнецк</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Красноярск</a>
+                </li>
+                </ul>
+                </span>
+                </a>
+                <p class="text-xs-right font-weight-bold"><i class="material-icons">phone</i><span class="text_bold">+7 (3952) 28-31-09</span></p>
+            </div>
+        </div>
+        <div>
+            <div class="col-lg-6 hidden-xs-up col_top_menu pt-2">
+                <nav class="nav text-muted text-xs-center">
+                    <a class="nav-link text-muted" href="portfolio.html">Портфолио</a>
+                    <a class="nav-link text-muted" href="#">Решения</a>
+                    <a class="nav-link text-muted" href="about.html">О компании</a>
+                    <a class="nav-link text-muted" href="#">Блог</a>
+                    <a class="nav-link text-muted" href="contacts.html">Контакты</a>
+                </nav>
+            </div>
         </div>
     </div>
-    <div>
-        <div class="col-lg-6 hidden-lg-up col_top_menu pt-2">
-            <nav class="nav text-muted text-xs-center">
-                <a class="nav-link text-muted" href="portfolio.html">Портфолио</a>
-                <a class="nav-link text-muted" href="#">Решения</a>
-                <a class="nav-link text-muted" href="about.html">О компании</a>
-                <a class="nav-link text-muted" href="#">Блог</a>
-                <a class="nav-link text-muted" href="contacts.html">Контакты</a>
-            </nav>
-        </div>
-    </div>
-</div> <!-- /container -->
 
 
 <div class="w-100 bg-faded" style='height: auto;'>
@@ -388,7 +389,7 @@
 
 
 <div class="map_overlay text-xs-center hidden-sm-down pt-2">
-    <div class="row cities_map_selector" id="cities_map_selector">
+    <div class="cities_map_selector" id="cities_map_selector">
         <button onclick="initMap({lat: 52.2860275, lng: 104.2505736}), resetButton()" class="current">Иркутск</button>
         <button onclick="initMap({lat: 50.582437, lng: 36.5643953}), resetButton()">Белгород</button>
         <button onclick="initMap({lat: 55.025403, lng: 82.9472923}), resetButton()">Новосибирск</button>
@@ -397,7 +398,8 @@
     </div>
 </div>
 
-<div id="map" style="height: 55vh"></div><!-- /map -->
+<div id="map" style="height: 55vh">
+</div><!-- /map -->
 
 
 <div class="px-3 container-1280">
